@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 export default function loading() {
   return (
-    <div className='flex justify-center mt-16'>
-      <Image className='h-52' src='spinner.svg' alt='loading...' ></Image>
+    <div className='flex justify-center items-center mt-16'>
+      <div className='animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500'></div>
     </div>
   );
 }
